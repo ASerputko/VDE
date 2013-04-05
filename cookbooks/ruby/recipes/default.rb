@@ -3,12 +3,21 @@ require_recipe "build-essential"
 
 package "curl"
 package "libyaml-dev"
+package "libsqlite3-dev"
+package "sqlite3"
+package "libgdbm-dev"
+package "libncurses5-dev"
+package "libtool"
+package "pkg-config"
+package "libffi-dev"
 
 bash "install ruby via rvm" do
   user node[:ruby][:user]
   code <<-CODE
 curl -L get.rvm.io | bash -s stable
-source ~/.rvm/scripts/rvm
+source #{node[:ruby][:home]}/.rvm/scripts/rvm
+source #{node[:ruby][:home]}/.bashrc
+source #{node[:ruby][:home]}/.profile
 rvm install #{node[:ruby][:version]}
 rvm use #{node[:ruby][:version]} --default
 CODE
