@@ -18,3 +18,15 @@ Set your name and email
 `$ git config --global user.name "your name"`
 
 `$ git config --global user.email your email`
+
+
+### 6. Add existing module
+`git submodule init`
+
+`git submodule update`
+
+`cd restaurant_software/`
+
+`git merge origin/master`
+
+`git checkout master`
