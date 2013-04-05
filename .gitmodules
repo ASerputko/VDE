@@ -1,0 +1,3 @@
+[submodule "restaurant_software"]
+	path = restaurant_software
+	url = https://github.com/WebUI-Dp-032/restaurant_software.git
