@@ -10,6 +10,8 @@ package "libncurses5-dev"
 package "libtool"
 package "pkg-config"
 package "libffi-dev"
+package "libxml2-dev"
+package "libxslt1-dev"
 
 bash "install ruby via rvm" do
   user node[:ruby][:user]
