@@ -1,5 +1,5 @@
-require_recipe "mysql"
-require_recipe "rails::common"
+include_recipe "mysql"
+include_recipe "rails::common"
 
 template "#{node[:rails][:app_root]}/Gemfile" do
   source "Gemfile.erb"

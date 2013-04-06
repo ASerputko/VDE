@@ -1,5 +1,5 @@
-require_recipe "postgresql"
-require_recipe "rails::common"
+include_recipe "postgresql"
+include_recipe "rails::common"
 
 package "libpq-dev"
 

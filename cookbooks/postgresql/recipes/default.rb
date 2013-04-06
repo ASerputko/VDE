@@ -1,4 +1,4 @@
-require_recipe "apt"
+include_recipe "apt"
 
 package "python-software-properties"
 execute "add-apt-repository ppa:pitti/postgresql"

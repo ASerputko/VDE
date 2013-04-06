@@ -1,5 +1,5 @@
-require_recipe "apt"
-require_recipe "ruby"
+include_recipe "apt"
+include_recipe "ruby"
 
 package "libxml2-dev"
 package "libxslt1-dev"
